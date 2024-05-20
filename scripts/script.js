@@ -1,0 +1,15 @@
+/*
+Create player factory function
+Create arrays for each player
+Create score variable for each player
+Create name variable for each player
+Add functions for displaying and modifying variables
+
+Create module for gameboard
+Create variables for each player
+Create variable for entire gameboard
+Create variable for array of arrays of each winning condition
+Add a function for checking agains winning conditions or ties
+
+Create game module which will include the gameboard module and also handle drawing the html
+*/
