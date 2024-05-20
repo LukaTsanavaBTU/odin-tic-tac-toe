@@ -98,12 +98,12 @@ const gameboard = (function(playerFunc) {
         player1.resetMarks();
         player2.resetScore();
         player2.resetMarks();
-        placedMarks.calcPlacedMarks();
+        calcPlacedMarks();
     };
     const softReset = function() {
         player1.resetMarks();
         player2.resetMarks();
-        placedMarks.calcPlacedMarks();
+        calcPlacedMarks();
     };
     const handleResult = function() {
         const result = checkWin();
@@ -118,5 +118,3 @@ const gameboard = (function(playerFunc) {
     };
     return {player1, player2, checkWin, hardReset, softReset, handleResult, calcPlacedMarks};
 })(player);
-
-gameboard();
