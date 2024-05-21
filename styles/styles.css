@@ -55,3 +55,7 @@ body {
     color: #fff;
     margin-top: 40px;
 }
+
+.noclick {
+    pointer-events:none;
+}

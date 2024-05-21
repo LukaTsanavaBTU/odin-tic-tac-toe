@@ -165,24 +165,26 @@ const gameLoop = (function(board) {
         boardDivs.forEach((div) => {
             div.textContent = "";
         });
+        boardDivs.forEach((div) => {div.classList.remove("noclick")});
     };
     const handleResult = function() {
         const result = board.checkWin();
         if (result !== "InProgress") {
             board.handleResult();
             updateScores();
-            switch (result) {
-                case "Player 1":
-                    alert("Player 1 Wins!");
-                    break;
-                case "Player 2":
-                    alert("Player 2 Wins!");
-                    break;
-                case "Tie":
-                    alert("Tie!");
-                    break;
-            }
-            resetBoard();
+            // switch (result) {
+            //     case "Player 1":
+            //         alert("Player 1 Wins!");
+            //         break;
+            //     case "Player 2":
+            //         alert("Player 2 Wins!");
+            //         break;
+            //     case "Tie":
+            //         alert("Tie!");
+            //         break;
+            // }
+            boardDivs.forEach((div) => {div.classList.add("noclick")});
+            setTimeout(resetBoard, 1000);
         }
 
     };
