@@ -133,9 +133,7 @@ const gameboard = (function(playerFunc) {
 
 const gameLoop = (function(board) {
     const boardDivs = document.querySelectorAll(".grid-container>div");
-    const p1NameSpan = document.querySelector(".p1-name");
     const p1ScoreSpan = document.querySelector(".p1-score");
-    const p2NameSpan = document.querySelector(".p2-name");
     const p2ScoreSpan = document.querySelector(".p2-score");
     let turn = 1;
     const start = function() {

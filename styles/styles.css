@@ -29,6 +29,7 @@ body {
     width: var(--box-sixe);
     height: var(--box-sixe);
     background-color: #c8cddd;
+    color: #6f748a;;
     font-size: 3rem;
     font-weight: 700;
 
@@ -43,4 +44,14 @@ body {
 
 .grid-container div:active {
     background-color: #c8cddd;;
+}
+
+.scores {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #acb3c9;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 40px;
 }
