@@ -31,6 +31,10 @@ body {
     background-color: #c8cddd;
     font-size: 3rem;
     font-weight: 700;
+
+    -webkit-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .grid-container div:hover {
