@@ -1,27 +1,3 @@
-/*
-Create player factory function 
-Create arrays for each player x
-Create variable for which mark the player uses x
-Create score variable for each player x
-Create name variable for each player x
-Add functions for displaying and modifying variables x
-
-Create module for gameboard
-Create variables for each player x
-Create variable for entire gameboard x
-Create variable for array of arrays of each winning condition x
-Add a function for checking agains winning conditions or ties x
-Add a function for resetting the game x
-Add a function for handling game results x
-
-Create gameLoop module which will include the gameboard module and also handle drawing the html
-Create variables for the interactible divs x
-Add functions for placing marks x
-Add functions for starting, resetting and ending games x
-Add functions for choosing player names
-Add functions for hard resetting game
-*/
-
 function player(name="Player", mark) {
     let score = 0;
     let placedMarks = new Array(9).fill(false);
@@ -172,17 +148,6 @@ const gameLoop = (function(board) {
         if (result !== "InProgress") {
             board.handleResult();
             updateScores();
-            // switch (result) {
-            //     case "Player 1":
-            //         alert("Player 1 Wins!");
-            //         break;
-            //     case "Player 2":
-            //         alert("Player 2 Wins!");
-            //         break;
-            //     case "Tie":
-            //         alert("Tie!");
-            //         break;
-            // }
             boardDivs.forEach((div) => {div.classList.add("noclick")});
             setTimeout(resetBoard, 1000);
         }
